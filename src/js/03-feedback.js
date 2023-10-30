@@ -4,8 +4,7 @@ import throttle from "lodash/throttle"
 const refs = {
   form: document.querySelector('form.feedback-form'),
   emailInput: document.querySelector('form input'),
-  messageInput: document.querySelector('form textarea'),
-  submitBtn: document.querySelector('form button')
+  messageInput: document.querySelector('form textarea')
 }
 const storageKey = "feedback-form-state"
 let formInputObj
