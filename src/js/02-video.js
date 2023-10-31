@@ -8,5 +8,5 @@ const player = new Player(iframe)
 player.on('timeupdate', throttle((data) => storage.save(storageKey, data.seconds), 1000))
 
 player.on('loaded', () => {
-  player.setCurrentTime(storage.load(storageKey ))
+  player.setCurrentTime(storage.load(storageKey ) || 0)
 })
